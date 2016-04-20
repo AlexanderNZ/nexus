@@ -14,10 +14,10 @@ class nexus::params {
   case $::operatingsystem {
     'Ubuntu' : {
       case $::operatingsystemrelease {
-        '12.04' : {
+        '14.04' : {
           case $::architecture {
             'amd64' : {
-              $java_home = '/usr/lib/jvm/java-7-openjdk-amd64'
+              $java_home = '/usr/java/jdk1.8.0_77/bin/java'
               $jsw = 'linux-x86-64'
             }
             default : {
